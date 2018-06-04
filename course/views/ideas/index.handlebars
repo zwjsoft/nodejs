@@ -1,0 +1,13 @@
+<h1>学习课程</h1>
+{{#each ideas}}
+<div class="card card-body md-2">
+   <h4>{{title}}</h4> 
+   <p>{{details}}</p>
+   <a href="/ideas/edit/{{id}}" class="btn btn-primary btn-block">编辑</a>
+   <form action="/ideas/{{id}}?_method=DELETE" method="POST" style="margin:10px 0px">
+    <button type="submit" class="btn btn-danger btn-block">删除</button>
+   </form>
+</div>
+{{else}}
+
+{{/each}}
