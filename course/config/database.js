@@ -1,9 +1,0 @@
-if(process.env.NODE_ENV=="production"){
-    module.exports={
-        mongoUrl:"mongodb://127.0.0.1/course"
-    }
-}else{
-    module.exports={
-        mongoUrl:"mongodb://127.0.0.1/course"
-    }
-}
